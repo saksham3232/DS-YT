@@ -1,0 +1,92 @@
+================================================================================================================================
+                                LINUX COMMANDS REFERENCE GUIDE (COMMAND | DESCRIPTION | EXAMPLE)                                
+================================================================================================================================
+
+COMMAND                   | DESCRIPTION                                       | EXAMPLE                                         
+--------------------------+---------------------------------------------------+-------------------------------------------------
+pwd                       | Show current directory                            | pwd                                             
+ls                        | List files and directories                        | ls -l                                           
+cd                        | Change directory                                  | cd Documents                                    
+mkdir                     | Create a directory                                | mkdir projects                                  
+rmdir                     | Remove an empty directory                         | rmdir old_folder                                
+rm                        | Remove files or directories                       | rm file.txt                                     
+cp                        | Copy files or directories                         | cp file.txt backup.txt                          
+mv                        | Move or rename files                              | mv old.txt new.txt                              
+touch                     | Create an empty file                              | touch notes.txt                                 
+cat                       | Display file contents                             | cat file.txt                                    
+less                      | View a file one page at a time                    | less file.txt                                   
+head                      | Show first 10 lines                               | head file.txt                                   
+tail                      | Show last 10 lines                                | tail file.txt                                   
+tail -f                   | Monitor a file in real time                       | tail -f log.txt                                 
+find                      | Find files/directories                            | find . -name "*.txt"                            
+grep                      | Search for text in files                          | grep "error" log.txt                            
+locate                    | Quickly find files                                | locate report.pdf                               
+chmod                     | Change file permissions                           | chmod 755 script.sh                             
+chown                     | Change file owner                                 | sudo chown user:user file.txt                   
+whoami                    | Show current user                                 | whoami                                          
+hostname                  | Show system hostname                              | hostname                                        
+uname -a                  | Show system information                           | uname -a                                        
+df -h                     | Show disk usage                                   | df -h                                           
+du -sh                    | Show directory size                               | du -sh folder                                   
+free -h                   | Show memory usage                                 | free -h                                         
+uptime                    | Show system uptime                                | uptime                                          
+ps                        | Show running processes                            | ps aux                                          
+top                       | Live process monitor                              | top                                             
+kill                      | Stop a process by PID                             | kill 1234                                       
+killall                   | Stop processes by name                            | killall firefox                                 
+ping                      | Test network connectivity                         | ping google.com                                 
+ip a                      | Show IP addresses                                 | ip a                                            
+curl                      | Fetch data from a URL                             | curl https://example.com                        
+wget                      | Download files from web                           | wget https://example.com/file.zip               
+ssh                       | Connect to a remote server                        | ssh user@192.168.1.10                           
+sudo apt update           | Update package list                               | sudo apt update                                 
+sudo apt upgrade          | Upgrade installed packages                        | sudo apt upgrade                                
+sudo apt install          | Install a package                                 | sudo apt install git                            
+sudo apt remove           | Remove a package                                  | sudo apt remove git                             
+tar                       | Create or extract tar archives                    | tar -czf backup.tar.gz folder                   
+zip                       | Create ZIP archive                                | zip archive.zip file.txt                        
+unzip                     | Extract ZIP archive                               | unzip archive.zip                               
+echo                      | Write/append text to a file or stream             | echo "Hello Linux" > file.txt                   
+nano                      | Edit a file in terminal text editor               | nano file.txt                                   
+cd ..                     | Go back to parent directory                       | cd ..                                           
+rm -r                     | Recursively remove directory and contents         | rm -r myfolder                                  
+ln -s                     | Create a symbolic (soft) link                     | ln -s file.txt shortcut.txt                     
+ln                        | Create a hard link                                | ln file.txt hardlink.txt                        
+ls -li                    | List files with inode numbers                     | ls -li                                          
+ls /dev                   | List Linux hardware device files                  | ls /dev                                         
+mkfifo                    | Create a named pipe (FIFO)                        | mkfifo mypipe                                   
+file                      | Identify file type                                | file file.txt                                   
+ping -c 4                 | Send a specified number of ping packets           | ping -c 4 google.com                            
+ip addr                   | Show network IP addresses                         | ip addr                                         
+ip link                   | Show network link interfaces                      | ip link                                         
+ip route                  | Show IP routing table                             | ip route                                        
+ifconfig                  | Display network interface configuration           | ifconfig                                        
+hostname -I               | Display IP addresses of the host                  | hostname -I                                     
+traceroute                | Trace route path packets take to target           | traceroute google.com                           
+tracepath                 | Trace network path to destination                 | tracepath google.com                            
+nslookup                  | Query DNS servers for domain/IP info              | nslookup google.com                             
+dig                       | Query DNS servers with detailed output            | dig google.com                                  
+dig +short                | Query DNS to return IP address only               | dig +short google.com                           
+netstat -tuln             | Show all listening TCP/UDP ports                  | netstat -tuln                                   
+netstat -a                | Show all active network connections               | netstat -a                                      
+ss -tuln                  | Show listening socket ports (modern netstat)      | ss -tuln                                        
+ss -a                     | Show all socket connections                       | ss -a                                           
+arp -a                    | Display system ARP cache table                    | arp -a                                          
+ip neigh                  | Display ARP table (modern alternative)            | ip neigh                                        
+route -n                  | Display IP routing table numerically              | route -n                                        
+curl -I                   | Fetch HTTP response headers only                  | curl -I https://example.com                     
+scp                       | Securely copy files between remote hosts          | scp file.txt user@192.168.1.10:/home/           
+sftp                      | Secure interactive file transfer protocol         | sftp username@192.168.1.10                      
+telnet                    | Test port connectivity over telnet                | telnet google.com 80                            
+nc -zv                    | Test port connectivity using Netcat               | nc -zv google.com 80                            
+nc -l                     | Listen on a specified port using Netcat           | nc -l 1234                                      
+nmap                      | Scan network hosts and open ports                 | nmap scanme.nmap.org                            
+nmap -p                   | Scan specific port on target host                 | nmap -p 80 example.com                          
+sudo tcpdump              | Capture and analyze network packets               | sudo tcpdump -i eth0                            
+ethtool                   | Display Ethernet interface settings               | sudo ethtool eth0                               
+nmcli device status       | Show NetworkManager device statuses               | nmcli device status                             
+nmcli connection show     | Show NetworkManager connection profiles           | nmcli connection show                           
+iwconfig                  | Display wireless network interface config         | iwconfig                                        
+iw dev                    | Display wireless devices (modern alternative)     | iw dev                                          
+--------------------------+---------------------------------------------------+-------------------------------------------------
+Total commands listed: 84
